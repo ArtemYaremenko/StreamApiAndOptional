@@ -12,5 +12,5 @@ public interface DepartmentService {
 
     List<Employee> findEmployeesFromDepart(String depart);
 
-    Map<String, List<Employee>> findEmployeesWithDepart(String depart);
+    Map<String, List<Employee>> findEmployeesWithDepart();
 }

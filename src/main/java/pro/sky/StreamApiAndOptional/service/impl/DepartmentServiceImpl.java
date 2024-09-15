@@ -46,7 +46,7 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
-    public Map<String, List<Employee>> findEmployeesWithDepart(String depart) {
+    public Map<String, List<Employee>> findEmployeesWithDepart() {
         return employeeService.findAll()
                 .stream()
                 .collect(Collectors.groupingBy(Employee::getDepart));
