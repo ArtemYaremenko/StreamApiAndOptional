@@ -21,8 +21,8 @@ public class EmployeeController {
     public Employee add(@RequestParam("passportnumber") String passportNumber,
                         @RequestParam("firstname") String firstName,
                         @RequestParam("lastname") String lastName,
-                        @RequestParam("salary") String salary,
-                        @RequestParam("depart") String depart) {
+                        @RequestParam("salary") int salary,
+                        @RequestParam("depart") int depart) {
         return employeeService.addEmployee(passportNumber, firstName, lastName, salary, depart);
     }
 

@@ -9,8 +9,8 @@ public interface EmployeeService {
     Employee addEmployee(String passportNumber,
                          String firstName,
                          String lastName,
-                         String salary,
-                         String depart);
+                         int salary,
+                         int depart);
 
     Employee removeEmployee(String passportNumber);
 

@@ -9,7 +9,6 @@ import pro.sky.StreamApiAndOptional.service.EmployeeService;
 
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 
 @Service
@@ -25,8 +24,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Employee addEmployee(String passportNumber,
                                 String firstName,
                                 String lastName,
-                                String salary,
-                                String depart) {
+                                int salary,
+                                int depart) {
         Passport newPassport = new Passport(passportNumber);
         Employee newEmployee = new Employee(firstName, lastName, salary, depart);
         if (employeeBook.containsKey(newPassport)) {

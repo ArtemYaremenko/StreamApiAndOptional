@@ -6,10 +6,10 @@ public class Employee {
 
     private final String firstName;
     private final String lastName;
-    private String salary;
-    private String depart;
+    private int salary;
+    private int depart;
 
-    public Employee(String firstName, String lastName, String salary, String depart) {
+    public Employee(String firstName, String lastName, int salary, int depart) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.salary = salary;
@@ -24,19 +24,19 @@ public class Employee {
         return lastName;
     }
 
-    public String getSalary() {
+    public int getSalary() {
         return salary;
     }
 
-    public String getDepart() {
+    public int getDepart() {
         return depart;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
-    public void setDepart(String depart) {
+    public void setDepart(int depart) {
         this.depart = depart;
     }
 
